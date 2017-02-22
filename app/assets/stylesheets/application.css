@@ -27,6 +27,12 @@ textarea {
   resize: vertical;
 }
 
+.titlelogo{
+  color: white;
+  font-size: 1.6em;
+  text-decoration: none;
+}
+
 .center {
   text-align: center;
 }

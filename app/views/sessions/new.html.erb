@@ -19,9 +19,9 @@
 
       <%= f.submit "Log in", class: "mdl-button mdl-js-button mdl-button--raised mdl-button--accent", style: "margin-top: 20px;" %>
 
-     <% end %>
+     <% end %><br><br>
 
-      <p>New user? <%= link_to "Sign up now!", signup_path %></p>
+      <%= link_to "Or Sign Up Now!", signup_path, class: "mdl-button mdl-js-button mdl-button--primary" %>
 
     
   </div>

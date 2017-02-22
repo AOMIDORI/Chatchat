@@ -22,8 +22,6 @@ test:
 
 production:
   adapter: postgresql
-  database: db/production.sqlite3
   pool: 5
   encoding: unicode
-  prepared_statements: false
 
