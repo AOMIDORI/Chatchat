@@ -32,7 +32,7 @@ gem 'bcrypt', '~> 3.1.7'
 
 gem 'material_design_lite-rails', '~>1.3'
 gem 'omniauth-facebook'
-gem 'omniauth-twitter'
+gem 'material_icons'
 
 group :development, :test do
   gem 'sqlite3'
