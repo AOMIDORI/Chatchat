@@ -10,11 +10,11 @@
       <nav class="mdl-navigation mdl-layout--large-screen-only">
         <%= link_to "Home", root_url, class: "mdl-navigation__link" %>
         <%= link_to "Help", '#', class: "mdl-navigation__link" %>
-        <%= link_to "Users", '#', class: "mdl-navigation__link" %>
+        <%= link_to "JOIN NOW", signup_path, class:"mdl-button mdl-js-button mdl-button--raised mdl-button--accent" %>
         <% if logged_in? %>
           <%= link_to "Log out", logout_path, class: "mdl-navigation__link" %>
         <% else %>
-          <%= link_to "Log in", login_path, class: "mdl-navigation__link" %>
+          <%= link_to "LOG IN", login_path, class: "mdl-navigation__link" %>
         <% end %>
 
       </nav>

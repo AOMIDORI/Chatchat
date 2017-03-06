@@ -1,14 +1,21 @@
-<% provide(:title, 'Chatchat | Mini chat rooms') %>
-<div class="center">
-  <br>
-  <h1>Hello</h1>
-  <h1> :-) </h1>
-  <h3>Welcome to Homemaker</h3>
-    	<p>
-      		"We give you a better home."
-    	</p>
+<% provide(:title, 'HomeMaker | Home') %>
 
-  <div>
-    		<%= link_to "Sign up", signup_path, class: "mdl-button mdl-js-button mdl-button--raised mdl-button--accent" %>
+<div class="mdl-grid">
+  <p class="intro">
+    Leave your chores to us! Everything about home is here :)
+  </p>
+</div>
+<div class="mdl-grid">
+  <div class="mdl-cell mdl-cell--6-col mdl-cell--8-offset button-group">
+    <button class="mdl-button mdl-js-button">
+      About us
+    </button>
+    <button class="mdl-button mdl-js-button">
+      FAQ
+    </button>
+    <button class="mdl-button mdl-js-button">
+      Contact
+    </button>
   </div>
 </div>
+<%= render 'welcome' %>
