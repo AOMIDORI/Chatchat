@@ -23,9 +23,13 @@
   <div class="mdl-layout__drawer">
     <span class="mdl-layout-title">Title</span>
     <nav class="mdl-navigation">
-      <a class="mdl-navigation__link" href="">Explore</a>
-      <a class="mdl-navigation__link" href="">Help</a>
-      <a class="mdl-navigation__link" href="">Link</a>
-      <a class="mdl-navigation__link" href="">Link</a>
+      <%= link_to "Home", root_url, class: "mdl-navigation__link" %>
+      <%= link_to "Help", '#', class: "mdl-navigation__link" %>
+      <%= link_to "SIGN UP", signup_path, class:"mdl-navigation__link" %>
+      <% if logged_in? %>
+        <%= link_to "Log out", logout_path, class: "mdl-navigation__link" %>
+      <% else %>
+        <%= link_to "LOG IN", login_path, class: "mdl-navigation__link" %>
+      <% end %>
     </nav>
   </div>
