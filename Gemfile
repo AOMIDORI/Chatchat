@@ -33,6 +33,12 @@ gem 'jbuilder', '~> 2.5'
 # Use ActiveModel has_secure_password
 gem 'bcrypt', '~> 3.1.7'
 
+# Admin
+gem 'rails_admin', '~> 1.1.1'
+
+# Email validation
+gem 'valid_email'
+
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 

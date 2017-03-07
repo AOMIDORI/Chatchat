@@ -1,4 +1,8 @@
+require 'valid_email'
+
 class User < ApplicationRecord
+  include ActiveModel::Validations
+  
   enum role: [:customer, :supplier]
   after_initialize :set_default_role, :if => :new_record?
 
@@ -11,9 +15,8 @@ class User < ApplicationRecord
 
 	before_save { self.email = email.downcase }
 	validates :name, presence: true, length: { maximum: 50 }
-	VALID_EMAIL_REGEX = /\A[\w+\-.]+@[a-z\d\-.]+\.[a-z]+\z/i
 	validates :email, presence: true, length: { maximum: 255 },
-                    	format: { with: VALID_EMAIL_REGEX },
+                    	email: true,
                     uniqueness: { case_sensitive: false }
 
     has_secure_password
