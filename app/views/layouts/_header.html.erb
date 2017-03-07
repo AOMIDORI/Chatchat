@@ -3,14 +3,14 @@
   <header class="mdl-layout__header">
     <div class="mdl-layout__header-row">
       <!-- Title -->
-      <span class="mdl-layout-title"><%= link_to "Homemaker", root_url,class: "titlelogo" %></span>
+      <%= link_to image_tag("logo-outline.svg", size: "60x60"), root_url, id:"logo"%>
+      <span class="mdl-layout-title"><%= link_to "HomeMaker", root_url,class: "titlelogo" %></span>
       <!-- Add spacer, to align navigation to the right -->
       <div class="mdl-layout-spacer"></div>
       <!-- Navigation. We hide it in small screens. -->
       <nav class="mdl-navigation mdl-layout--large-screen-only">
-        <%= link_to "Home", root_url, class: "mdl-navigation__link" %>
-        <%= link_to "Help", '#', class: "mdl-navigation__link" %>
-        <%= link_to "JOIN NOW", signup_path, class:"mdl-button mdl-js-button mdl-button--raised mdl-button--accent" %>
+        <%= link_to "FI/SE", '#', class: "mdl-navigation__link" %>
+        <%= link_to "JOIN NOW", signup_path, class:"mdl-button mdl-js-button mdl-button--raised mdl-button--accent black-button" %>
         <% if logged_in? %>
           <%= link_to "Log out", logout_path, class: "mdl-navigation__link" %>
         <% else %>

@@ -3,14 +3,17 @@
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
-  height: 400px;
+  height: 420px;
   border: 0;
 }
 .widetext{
   padding-top: 50px;
 }
-.widetext h1,h2,h3,h4,h5,p{
+.widetext h1,
+.widetext h2,
+.widetext h5{
   color: white;
+  font-family: 'Quicksand', sans-serif;
 }
 .darklayer{
   background-color: rgba(0,0,0,0.5);
@@ -23,10 +26,23 @@
   color:white;
 }
 
+.intro-block{
+  margin-top: 40px;
+  min-height: 300px;
+}
+.join-button{
+  background-color: #FFE386 !important;
+  color: black !important;
+  padding: 8px 50px !important;
+  margin: 10px !important;
+  font-size: 1.2em !important;
+  border-radius: 4em !important;
+}
+
+
 .intro{
-    font-family: Arial,Serif;
     color:darkgray;
-    font-weight:700;
+
     font-size: 18px;
 }
 .center{
@@ -70,7 +86,9 @@
     padding-left:25px;
 }
 .part-intro{
+
+  /*
     font-size:25px;
     color:darkgrey;
-    font-family: Arial, Serif;
+    font-family: Arial, Serif;*/
 }
