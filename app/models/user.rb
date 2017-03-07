@@ -1,5 +1,13 @@
 class User < ApplicationRecord
-    has_many :posts, dependent: :destroy
+  enum role: [:customer, :supplier]
+  after_initialize :set_default_role, :if => :new_record?
+
+  def set_default_role
+    self.role ||= :customer
+  end
+
+
+  #  has_many :posts, dependent: :destroy
 
 	before_save { self.email = email.downcase }
 	validates :name, presence: true, length: { maximum: 50 }
