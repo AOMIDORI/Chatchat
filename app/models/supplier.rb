@@ -6,4 +6,6 @@ class Supplier < ApplicationRecord
   validates :name, :username, :email, :address, :phone, presence: true
   validates :name, :username, :email, uniqueness: true
   validates :email, email: true
+
+  has_many :services
 end

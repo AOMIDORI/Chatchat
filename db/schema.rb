@@ -23,11 +23,13 @@ ActiveRecord::Schema.define(version: 20170307195430) do
 
   create_table "services", force: :cascade do |t|
     t.integer  "supplier_id"
-    t.decimal  "price",       precision: 10, scale: 2
+    t.string   "name"
+    t.integer  "service_type"
+    t.decimal  "price",        precision: 10, scale: 2
     t.float    "discount"
     t.text     "description"
-    t.datetime "created_at",                           null: false
-    t.datetime "updated_at",                           null: false
+    t.datetime "created_at",                            null: false
+    t.datetime "updated_at",                            null: false
     t.index ["supplier_id"], name: "index_services_on_supplier_id"
   end
 
