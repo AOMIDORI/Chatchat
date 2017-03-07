@@ -5,9 +5,13 @@ Rails.application.routes.draw do
 
   get 'users/new'
 
-  get 'static_pages/home'
+  get '/static_pages/home'
 
-  get 'help', to:'static_pages#help'
+  namespace :services do
+    get '/:id', to: 'services#detail', as: :detail
+  end
+
+  get '/help', to:'static_pages#help'
 
   get '/signup', to: 'users#new'
   post '/signup', to: 'users#create'
