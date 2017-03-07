@@ -21,9 +21,16 @@
   height: 100%;
 
 }
-
+.supplier-link-area{
+  margin-top: 80px;
+  width: 100%;
+}
 .supplier-link{
   color:white;
+  font-family: 'Quicksand', sans-serif;
+  font-size: 1.2em;
+  text-decoration: none;
+
 }
 
 .intro-block{
@@ -31,7 +38,7 @@
   min-height: 300px;
 }
 .join-button{
-  background-color: #FFE386 !important;
+  background-color: #FFCCCC !important;
   color: black !important;
   padding: 8px 50px !important;
   margin: 10px !important;

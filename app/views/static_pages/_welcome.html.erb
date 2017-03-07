@@ -6,8 +6,10 @@
       <h2>Hei, welcome :) </h2>
       <h5>How can we help with your home?</h5>
         <%= link_to "JOIN FOR FREE", signup_path, class:"join-button mdl-button mdl-js-button mdl-button--raised mdl-button--accent " %>
-        <br><br>
-        <%= link_to "I am a supplier",'#', class:"supplier-link" %>
+        <div class = "supplier-link-area">
+          <%= link_to "I am a supplier",'#', class:"supplier-link" %>
+          <i class="material-icons" style="color: white; font-size: 1.2em;">arrow_forward</i>
+        </div>
     </div>
   </div>
 </div>
@@ -18,21 +20,19 @@
   <h4 class="center part-intro">We provide all the following services</h4>
 
   <div class="mdl-grid show-box">
-    <div class="mdl-cell mdl-cell--2-col">
+    <div class="mdl-cell mdl-cell--3-col">
       <p>Cleaning</p>
     </div>
-    <div class="mdl-cell mdl-cell--2-col">
+    <div class="mdl-cell mdl-cell--3-col">
       <p>Repairing</p>
     </div>
-    <div class="mdl-cell mdl-cell--2-col">
+    <div class="mdl-cell mdl-cell--3-col">
       <p>Caring</p>
     </div>
-    <div class="mdl-cell mdl-cell--2-col">
+    <div class="mdl-cell mdl-cell--3-col">
       <p>Moving</p>
     </div>
-    <div class="mdl-cell mdl-cell--2-col">
-      <p>Other</p>
-    </div>
+
   </div>
 </div>
 
