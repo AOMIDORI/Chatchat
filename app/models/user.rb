@@ -3,6 +3,9 @@ require 'valid_email'
 class User < ApplicationRecord
   include ActiveModel::Validations
 
+  has_many :posts
+  has_many :reviews
+
   enum role: [:customer, :supplier]
   after_initialize :set_default_role, :if => :new_record?
 
@@ -21,8 +24,6 @@ class User < ApplicationRecord
 
   has_secure_password
   validates :password, presence: true, length: {minimum: 4}
-
-  has_many :posts
 
   #return the hash digest of the given string
   def User.digest(string)

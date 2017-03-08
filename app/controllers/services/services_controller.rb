@@ -1,7 +1,8 @@
 class Services::ServicesController < ApplicationController
   def detail
     service_id = params[:id]
-    @service = Service.includes(:supplier).find(service_id)
+    @service = Service.includes(:supplier, :reviews).find(service_id)
+    @related_services = @service.supplier.services.where.not(id: @service.id)
   end
 
   def compare
