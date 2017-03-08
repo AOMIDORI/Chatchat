@@ -2,12 +2,41 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="78e81626-8f0e-4e79-89aa-929ca9834931" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/assets/stylesheets/welcome-client.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/layouts/_header-client.html.erb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/static_pages/_welcome-client.html.erb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/assets/images/family15.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/assets/stylesheets/scaffolds.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/controllers/services/services_controller.rb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/helpers/markdown_helper.rb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/models/review.rb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/models/service.rb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/models/supplier.rb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/services/services/cart.html.erb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/services/services/detail.html.erb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/static_pages/_services.html.erb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/config/initializers/rails_admin.rb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/config/locales/fi.yml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/db/migrate/20170307144440_add_role_to_users.rb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/db/migrate/20170307194951_create_suppliers.rb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/db/migrate/20170307195430_create_services.rb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/db/migrate/20170308085102_create_reviews.rb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/db/migrate/20170308111930_add_url_to_supplier_and_services.rb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/fixtures/reviews.yml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/fixtures/services.yml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/fixtures/suppliers.yml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/models/review_test.rb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/models/service_test.rb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/models/supplier_test.rb" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/images/couple.gif" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Gemfile" afterPath="$PROJECT_DIR$/Gemfile" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Gemfile.lock" afterPath="$PROJECT_DIR$/Gemfile.lock" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/stylesheets/welcome.scss" afterPath="$PROJECT_DIR$/app/assets/stylesheets/welcome.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/static_pages_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/static_pages_controller.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/user.rb" afterPath="$PROJECT_DIR$/app/models/user.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/layouts/_header.html.erb" afterPath="$PROJECT_DIR$/app/views/layouts/_header.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/static_pages/_welcome.html.erb" afterPath="$PROJECT_DIR$/app/views/static_pages/_welcome.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/static_pages/home.html.erb" afterPath="$PROJECT_DIR$/app/views/static_pages/home.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/routes.rb" afterPath="$PROJECT_DIR$/config/routes.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/migrate/20170221193155_add_index_to_users_email.rb" afterPath="$PROJECT_DIR$/db/migrate/20170221193155_add_index_to_users_email.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/schema.rb" afterPath="$PROJECT_DIR$/db/schema.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/seeds.rb" afterPath="$PROJECT_DIR$/db/seeds.rb" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -28,7 +57,7 @@
               <entry file="file://$PROJECT_DIR$/../welcome.html">
                 <provider selected="true" editor-type-id="text-editor">
                   <state relative-caret-position="313">
-                    <caret line="115" column="46" lean-forward="true" selection-start-line="115" selection-start-column="46" selection-end-line="115" selection-end-column="46" />
+                    <caret line="115" column="46" lean-forward="false" selection-start-line="115" selection-start-column="46" selection-end-line="115" selection-end-column="46" />
                     <folding>
                       <element signature="n#style#0;n#i#0;n#div#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
                     </folding>
@@ -62,13 +91,6 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="couple.gif" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/assets/images/couple.gif">
-          <provider selected="true" editor-type-id="images">
-            <state />
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="family.png" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/assets/images/family.png">
           <provider selected="true" editor-type-id="images">
@@ -100,7 +122,7 @@
         <entry file="file://$PROJECT_DIR$/app/assets/images/logo-title.svg">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="0">
-              <caret line="0" column="83" lean-forward="true" selection-start-line="0" selection-start-column="83" selection-end-line="0" selection-end-column="83" />
+              <caret line="0" column="83" lean-forward="false" selection-start-line="0" selection-start-column="83" selection-end-line="0" selection-end-column="83" />
               <folding />
             </state>
           </provider>
@@ -126,8 +148,8 @@
       <file leaf-file-name="_welcome-client.html.erb" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/views/static_pages/_welcome-client.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2975">
-              <caret line="119" column="6" lean-forward="false" selection-start-line="119" selection-start-column="6" selection-end-line="119" selection-end-column="6" />
+            <state relative-caret-position="400">
+              <caret line="28" column="40" lean-forward="true" selection-start-line="28" selection-start-column="40" selection-end-line="28" selection-end-column="40" />
               <folding />
             </state>
           </provider>
@@ -303,6 +325,24 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="sessions" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Homemkr" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Homemkr" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
@@ -555,16 +595,16 @@
       <option name="presentableId" value="Default" />
       <updated>1488960904562</updated>
       <workItem from="1488960907907" duration="10849000" />
-      <workItem from="1489001124424" duration="2942000" />
+      <workItem from="1489001124424" duration="3594000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="13791000" />
+    <option name="totallyTimeSpent" value="14443000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-13" y="29" width="1382" height="680" extended-state="0" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19667171" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -905,7 +945,7 @@
     <entry file="file://$PROJECT_DIR$/app/assets/images/logo-title.svg">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
-          <caret line="0" column="83" lean-forward="true" selection-start-line="0" selection-start-column="83" selection-end-line="0" selection-end-column="83" />
+          <caret line="0" column="83" lean-forward="false" selection-start-line="0" selection-start-column="83" selection-end-line="0" selection-end-column="83" />
           <folding />
         </state>
       </provider>
@@ -921,7 +961,7 @@
     <entry file="file://$PROJECT_DIR$/../welcome.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="313">
-          <caret line="115" column="46" lean-forward="true" selection-start-line="115" selection-start-column="46" selection-end-line="115" selection-end-column="46" />
+          <caret line="115" column="46" lean-forward="false" selection-start-line="115" selection-start-column="46" selection-end-line="115" selection-end-column="46" />
           <folding>
             <element signature="n#style#0;n#i#0;n#div#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
@@ -946,8 +986,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/static_pages/_welcome-client.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2975">
-          <caret line="119" column="6" lean-forward="false" selection-start-line="119" selection-start-column="6" selection-end-line="119" selection-end-column="6" />
+        <state relative-caret-position="400">
+          <caret line="28" column="40" lean-forward="true" selection-start-line="28" selection-start-column="40" selection-end-line="28" selection-end-column="40" />
           <folding />
         </state>
       </provider>
