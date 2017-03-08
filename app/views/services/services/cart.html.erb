@@ -7,15 +7,24 @@
   </span>
 </div>
 <% else %>
-  <% @services.each do |service| %>
-  <div class="mdl-list__item">
-    <span class="mdl-list__item-primary-content">
-      <%= link_to services_remove_from_cart_path(service.id) do %><i class="material-icons">clear</i><% end %>
-      <span><%= service.name %></span>
-    </span>
-    <a class="mdl-list__item-secondary-action"><%= number_to_currency service.price, locale: :fi %></a>
-  </div>
-  <% end %>
+  <table class="mdl-data-table mdl-js-data-table mdl-shadow--2dp">
+    <thead>
+      <tr>
+        <th class="mdl-data-table__cell--non-numeric">Item</th>
+        <th class="mdl-data-table__cell--non-numeric">Remove</th>
+        <th>Price</th>
+      </tr>
+    </thead>
+    <tbody>
+      <% @services.each do |service| %>
+      <tr>
+        <td class="mdl-data-table__cell--non-numeric"><%= service.name %></td>
+        <td><%= link_to services_remove_from_cart_path(service.id) do %><i class="material-icons">clear</i><% end %></td>
+        <td><%= number_to_currency service.price, locale: :fi %></td>
+      </tr>
+      <% end %>
+    </tbody>
+  </table>
   <hr>
   <div class="mdl-list__item">
     <span class="mdl-list__item-primary-content">
