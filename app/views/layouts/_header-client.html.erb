@@ -1,0 +1,51 @@
+<!-- Always shows a header, even in smaller screens. -->
+
+  <header class="mdl-layout__header">
+    <div class="mdl-layout__header-row">
+      <!-- Title -->
+      <%= link_to image_tag("logo-outline.svg", size: "60x60"), root_url, id:"logo"%>
+      <span class="mdl-layout-title"><%= link_to "HomeMaker", root_url,class: "titlelogo" %></span>
+      <!-- Add spacer, to align navigation to the right -->
+      <div class="mdl-layout-spacer">
+        <form action="#">
+          <div class="mdl-textfield mdl-js-textfield mdl-textfield--expandable">
+            <button class="mdl-button mdl-js-button mdl-button--raised">
+             Espoo
+            </button>
+            <div class="mdl-textfield__expandable-holder">
+              <input class="mdl-textfield__input" type="text" id="search">
+              <label class="mdl-textfield__label" for="search">Enter key word here</label>
+            </div>
+             <div id="search-icon" class="icon material-icons">search</div>
+             <div class="mdl-tooltip" data-mdl-for="search-icon">
+                   search
+             </div>
+          </div>
+        </form>
+      </div>
+      <!-- Navigation. We hide it in small screens. mdl-layout- -large-screen-only-->
+      <nav class="mdl-navigation mdl-layout--large-screen-only">
+        <%= link_to "FI/SE", '#', class: "mdl-navigation__link  " %>
+        <%= link_to "JOIN NOW", signup_path, class:"mdl-button mdl-js-button mdl-button--raised mdl-button--accent black-button" %>
+        <% if logged_in? %>
+          <%= link_to "Log out", logout_path, class: "mdl-navigation__link" %>
+        <% else %>
+          <%= link_to "LOG IN", login_path, class: "mdl-navigation__link" %>
+        <% end %>
+
+      </nav>
+    </div>
+  </header>
+  <div class="mdl-layout__drawer">
+    <span class="mdl-layout-title">Title</span>
+    <nav class="mdl-navigation">
+      <%= link_to "Home", root_url, class: "mdl-navigation__link" %>
+      <%= link_to "Help", '#', class: "mdl-navigation__link" %>
+      <%= link_to "SIGN UP", signup_path, class:"mdl-navigation__link" %>
+      <% if logged_in? %>
+        <%= link_to "Log out", logout_path, class: "mdl-navigation__link" %>
+      <% else %>
+        <%= link_to "LOG IN", login_path, class: "mdl-navigation__link" %>
+      <% end %>
+    </nav>
+  </div>
