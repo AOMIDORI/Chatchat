@@ -1,12 +1,28 @@
-<div>
-  <h1><%= @service.name %></h1>
-  <h6>(<%= @service.price %> €)</h6>
-  <h4><%= @service.supplier.name %></h4>
-  <%= link_to 'Buy', services_add_to_cart_path(@service.id), class: 'mdl-button mdl-button--raised mdl-button--colored mdl-js-button mdl-js-ripple-effect' %>
-  <div><%= @service.description %></div>
+<div class="mdl-grid">
+  <div class="mdl-cell mdl-cell--6-col">
+    <h3><%= @service.name %></h1>
+  </div>
+  <div class="mdl-cell mdl-cell--6-col">
+    <h3>(<%= number_to_currency @service.price, locale: :fi %>)</h6>
+  </div>
+  <div class="mdl-cell mdl-cell--12-col">
+    <%= link_to 'Buy', services_add_to_cart_path(@service.id), class: 'mdl-button mdl-button--raised mdl-button--colored mdl-js-button mdl-js-ripple-effect' %>
+  </div>
+  <div class="mdl-cell mdl-cell--12-col">
+    <h4><%= @service.supplier.name %></h4>
+  </div>
+  <div class="mdl-cell mdl-cell--12-col">
+    <div><%= @service.description %></div>
+  </div>
+</div>
 
-  <div class="intro-block">
+<hr>
+
+<div class="mdl-grid">
+  <div class="mdl-cell mdl-cell--12-col">
     <h6>Customers who bought this also bought</h6>
+  </div>
+  <div class="intro-block mdl-cell mdl-cell--12-col">
     <div class="mdl-grid">
       <% @related_services.each do |service| %>
       <div class="demo-card-square mdl-card mdl-shadow--2dp mdl-cell mdl-cell--3-col">
@@ -22,9 +38,12 @@
     </div>
   </div>
 
-  <div>
-    <h4>Reviews</h4>
-    <ul class="demo-list-item mdl-list">
+  <div class="mdl-cell mdl-cell--12-col">
+    <div class="mdl-cell mdl-cell--12-col">
+      <h4>Reviews</h4>
+    </div>
+    <div class="mdl-cell mdl-cell--12-col">
+      <ul class="demo-list-item mdl-list">
       <% @service.reviews.each do |review| %>
       <li class="mdl-list__item">
         <div class="mdl-grid">
@@ -43,5 +62,6 @@
       </li>
       <% end %>
     </ul>
+    </div>
   </div>
 </div>
