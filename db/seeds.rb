@@ -12,6 +12,7 @@ supplier = Supplier.create(
   email: 'sivex@sivex.fi',
   address: 'Hämeentie 157, 6th floor, H10, FIN-00560 Helsinki',
   phone: '+358 40 774 8085',
+  image_url: 'http://sivex-sivusto.etunti.fi/wp-content/uploads/2016/11/sivex_logo_vad-1.png',
   description: 'We work every day to over 100 unique cleaning . We operate in the Helsinki Metropolitan Area (Helsinki, Espoo, Vantaa, Kauniainen) and its surrounding areas. We serve a broad businesses and private households. Our 450 standard customers can not be wrong.'
 )
 
@@ -19,6 +20,7 @@ services = Service.create([
   {
     supplier: supplier,
     name: 'Household cleaning',
+    image_url: 'http://sivex-sivusto.etunti.fi/wp-content/uploads/2015/09/kotisiivous-e1474623506543.png',
     service_type: :cleaning,
     price: 40,
     description: 'Vacuuming\ndusts wiping\nfloor wipe\nbeating can carpets\nIroning\nBed linen exchange\nDebris removal\nFloor waxing\nTerrace and outdoor porch cleaning\nCleaning Patio Furniture\nCleaning the room and sanitary facilities\nWashing windows\nHousehold appliances wiping and cleaning'
@@ -26,6 +28,7 @@ services = Service.create([
   {
     supplier: supplier,
     name: 'Moving cleaning',
+    image_url: 'http://sivex-sivusto.etunti.fi/wp-content/uploads/2015/11/muuttosiivouskoira5-e1474280499517.png',
     service_type: :cleaning,
     price: 60,
     description: 'Window wiping the boards\nIkkunasälekaihtimien brushing\ncleaning, kitchen appliances, including cooker hood\nKitchen cabinets thorough interior and exterior cleaning\ncleaning the kitchen tiles\nwashing and disinfection of toilet facilities\nFloor drain cleaning\nthorough cleaning tile surfaces and seams\nwashing Sanitary door glass\nwashing the sauna walls and benches\nWipe the floor surface clammy\ncleaning of walls and doors\ncleaning of the apartment stains\nVacuuming carpets and rugs, and export out of the ventilation'
