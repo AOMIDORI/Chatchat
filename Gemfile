@@ -39,6 +39,9 @@ gem 'rails_admin', '~> 1.1.1'
 # Email validation
 gem 'valid_email'
 
+# Markdown rendering
+gem 'redcarpet', '~> 3.4.0'
+
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 

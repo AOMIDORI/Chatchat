@@ -12,7 +12,7 @@
     <h4><%= @service.supplier.name %></h4>
   </div>
   <div class="mdl-cell mdl-cell--12-col">
-    <div><%= @service.description %></div>
+    <div><%= markdown(@service.description) %></div>
   </div>
 </div>
 

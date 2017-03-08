@@ -23,7 +23,7 @@ services = Service.create([
     image_url: 'http://sivex-sivusto.etunti.fi/wp-content/uploads/2015/09/kotisiivous-e1474623506543.png',
     service_type: :cleaning,
     price: 40,
-    description: 'Vacuuming\ndusts wiping\nfloor wipe\nbeating can carpets\nIroning\nBed linen exchange\nDebris removal\nFloor waxing\nTerrace and outdoor porch cleaning\nCleaning Patio Furniture\nCleaning the room and sanitary facilities\nWashing windows\nHousehold appliances wiping and cleaning'
+    description: 'Vacuuming\r\ndusts wiping\r\nfloor wipe\r\nbeating can carpets\r\nIroning\r\nBed linen exchange\r\nDebris removal\r\nFloor waxing\r\nTerrace and outdoor porch cleaning\r\nCleaning Patio Furniture\r\nCleaning the room and sanitary facilities\r\nWashing windows\r\nHousehold appliances wiping and cleaning'
   },
   {
     supplier: supplier,
@@ -31,7 +31,7 @@ services = Service.create([
     image_url: 'http://sivex-sivusto.etunti.fi/wp-content/uploads/2015/11/muuttosiivouskoira5-e1474280499517.png',
     service_type: :cleaning,
     price: 60,
-    description: 'Window wiping the boards\nIkkunasälekaihtimien brushing\ncleaning, kitchen appliances, including cooker hood\nKitchen cabinets thorough interior and exterior cleaning\ncleaning the kitchen tiles\nwashing and disinfection of toilet facilities\nFloor drain cleaning\nthorough cleaning tile surfaces and seams\nwashing Sanitary door glass\nwashing the sauna walls and benches\nWipe the floor surface clammy\ncleaning of walls and doors\ncleaning of the apartment stains\nVacuuming carpets and rugs, and export out of the ventilation'
+    description: 'Window wiping the boards\r\nIkkunasälekaihtimien brushing\r\ncleaning, kitchen appliances, including cooker hood\r\nKitchen cabinets thorough interior and exterior cleaning\r\ncleaning the kitchen tiles\r\nwashing and disinfection of toilet facilities\r\nFloor drain cleaning\r\nthorough cleaning tile surfaces and seams\r\nwashing Sanitary door glass\r\nwashing the sauna walls and benches\r\nWipe the floor surface clammy\r\ncleaning of walls and doors\r\ncleaning of the apartment stains\r\nVacuuming carpets and rugs, and export out of the ventilation'
   }
 ])
 
