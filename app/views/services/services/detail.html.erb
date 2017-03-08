@@ -2,5 +2,6 @@
   <h1><%= @service.name %></h1>
   <h6>(<%= @service.price %> €)</h6>
   <h4><%= @service.supplier.name %></h4>
+  <%= link_to 'Buy', services_add_to_cart_path(@service.id), class: 'mdl-button mdl-button--raised mdl-button--colored mdl-js-button mdl-js-ripple-effect' %>
   <div><%= @service.description %></div>
 </div>

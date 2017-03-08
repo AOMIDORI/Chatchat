@@ -12,6 +12,7 @@
         <%= link_to "FI/SE", '#', class: "mdl-navigation__link  " %>
 
         <% if logged_in? %>
+          <%= link_to "Cart", services_cart_path, class: "mdl-navigation__link" %>
           <%= link_to "Log out", logout_path, class: "mdl-navigation__link" %>
         <% else %>
           <%= link_to "JOIN NOW", signup_path, class:"mdl-button mdl-js-button mdl-button--raised mdl-button--accent black-button" %>

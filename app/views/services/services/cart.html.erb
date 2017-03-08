@@ -1,0 +1,33 @@
+<div class="demo-list-action mdl-list">
+<% if @services.empty? %>
+<div class="mdl-list__item">
+  <span class="mdl-list__item-primary-content">
+    <!-- <i class="material-icons mdl-list__item-avatar">person</i> -->
+    <span>Your shopping cart is empty.</span>
+  </span>
+</div>
+<% else %>
+  <% @services.each do |service| %>
+  <div class="mdl-list__item">
+    <span class="mdl-list__item-primary-content">
+      <%= link_to services_remove_from_cart_path(service.id) do %><i class="material-icons">clear</i><% end %>
+      <span><%= service.name %></span>
+    </span>
+    <a class="mdl-list__item-secondary-action"><%= number_to_currency service.price, locale: :fi %></a>
+  </div>
+  <% end %>
+  <hr>
+  <div class="mdl-list__item">
+    <span class="mdl-list__item-primary-content">
+      <!-- <i class="material-icons mdl-list__item-avatar">alarm</i> -->
+      <span>Subtotal</span>
+    </span>
+    <span class="mdl-list__item-secondary-content">
+      <a class="mdl-list__item-secondary-action"><%= number_to_currency @subtotal, locale: :fi %></a>
+    </span>
+  </div>
+  <%= form_tag(services_purchase_path, method: :post) do %>
+    <%= submit_tag("Purchase", class: "mdl-button mdl-button--raised mdl-button--colored mdl-js-ripple-effect") %>
+  <% end %>
+<% end %>
+</div>
