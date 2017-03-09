@@ -3,7 +3,7 @@
   <head>
     <title>Homemaker</title>
     <%= csrf_meta_tags %>
-    <%= stylesheet_link_tag 'application', 'https://fonts.googleapis.com/css?family=Quicksand:300|Raleway', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= stylesheet_link_tag 'application', 'https://fonts.googleapis.com/css?family=Quicksand:300|Raleway|Montserrat', media: 'all', 'data-turbolinks-track': 'reload' %>
 
     <%= stylesheet_link_tag "https://fonts.googleapis.com/icon?family=Material+Icons" %>
 
@@ -21,10 +21,12 @@
     <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
     <%= render 'layouts/header' %>
     <main class="mdl-layout__content">
+      <div class="content">
       <% flash.each do |message_type, message| %>
         <div class="alert alert-<%= message_type %>"><%= message %></div>
       <% end %>
       <%= yield %>
+    </div>
       <%= render 'layouts/footer' %>
     </main>
 

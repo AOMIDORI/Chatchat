@@ -26,7 +26,7 @@
   width: 100%;
 }
 .supplier-link{
-  color:white;
+  color:white !important;
   font-family: 'Quicksand', sans-serif;
   font-size: 1.2em;
   text-decoration: none;
@@ -93,9 +93,7 @@
     padding-left:25px;
 }
 .part-intro{
+    font-size:30px;
 
-  /*
-    font-size:25px;
-    color:darkgrey;
-    font-family: Arial, Serif;*/
+    font-family: 'Montserrat', sans-serif;
 }

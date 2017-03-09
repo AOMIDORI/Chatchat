@@ -2,11 +2,6 @@
 	<div class="center pagecontent">
 		<h1>Welcome back </h1>
 		<p>0A0 home page after log in</p>
-		<% if @user.posts.any? %>
-		<h3>posts (<%= @user.posts.count %>)</h3>
-		<ol class="posts">
-			<%= render @posts %>
-		</ol>
-		<% end %>
+		
 
 	</div>

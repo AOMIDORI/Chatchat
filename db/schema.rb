@@ -65,6 +65,7 @@ ActiveRecord::Schema.define(version: 20170308111930) do
     t.datetime "updated_at",      null: false
     t.string   "password_digest"
     t.integer  "role"
+    t.index ["email"], name: "index_users_on_email", unique: true
   end
 
 end
