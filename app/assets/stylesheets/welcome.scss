@@ -82,18 +82,35 @@
     font-size:25px;
     line-height: 20px;
 }
+.why-us-box div{
+  color:darkgray;
+  height:200px;
+  text-align: center;
+  padding: 20px 50px;
+}
+
 .show-box div{
-    padding-left:20px;
-    background-color:lightgray;
+    background-color:#F8F8F8;
     color:darkgray;
     font-size:35px;
-    height:200px;
+    height:240px;
+    text-align: center;
+    padding: 20px 30px;
 }
 .show-box p{
-    padding-left:25px;
+
+}
+.show-box h5{
+  font-size: 0.5em;
+  color: #464646;
+  font-family: 'Quicksand', sans-serif;
+
 }
 .part-intro{
     font-size:30px;
 
     font-family: 'Montserrat', sans-serif;
+}
+.serve-loc{
+  margin: 30px;
 }

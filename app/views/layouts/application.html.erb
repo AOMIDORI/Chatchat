@@ -22,11 +22,11 @@
     <%= render 'layouts/header' %>
     <main class="mdl-layout__content">
       <div class="content">
-      <% flash.each do |message_type, message| %>
-        <div class="alert alert-<%= message_type %>"><%= message %></div>
-      <% end %>
-      <%= yield %>
-    </div>
+        <% flash.each do |message_type, message| %>
+          <div class="alert alert-<%= message_type %>"><%= message %></div>
+        <% end %>
+        <%= yield %>
+      </div>
       <%= render 'layouts/footer' %>
     </main>
 

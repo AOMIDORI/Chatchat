@@ -9,7 +9,8 @@
       <div class="mdl-layout-spacer"></div>
       <!-- Navigation. We hide it in small screens. mdl-layout- -large-screen-only-->
       <nav class="mdl-navigation mdl-layout--large-screen-only">
-        <%= link_to "FI/SE", '#', class: "mdl-navigation__link  " %>
+        <%= link_to "FI", '#', class: "mdl-navigation__link  ", style: "padding-left: 2px; padding-right:8px;" %>
+        <%= link_to "SE", '#', class: "mdl-navigation__link  ", style: "padding-left: 2px;" %>
 
         <% if logged_in? %>
           <%= link_to "Cart", services_cart_path, class: "mdl-navigation__link" %>
